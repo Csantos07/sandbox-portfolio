@@ -1,0 +1,15 @@
+{
+  "name": "explore-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:scss": "sass src/scss/styles.scss src/css/styles.css",
+    "watch:sass": "sass src/scss/styles.scss src/css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}

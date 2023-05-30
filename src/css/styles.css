@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto:wght@100&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: roboto;
+}
+body.light-version {
+  background-color: white;
+}
+body.dark-version {
+  background-color: black;
+  color: white;
+}
+
+.card__container {
+  margin: 1rem 1rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 3rem;
+  padding: 1.5rem;
+}
+
+.card__container--long {
+  margin: 1rem 1rem;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 3rem;
+  padding: 1.5rem;
+}
+
+/* this current version is meant to be on a white background */
+.card__container-dark-box-shadow {
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.8);
+}
+
+/* this  version is meant to be on a black background */
+.card__container--light-box-shadow {
+  box-shadow: 0.8px 0.1px 0.1rem rgba(179, 47, 47, 0.8);
+}
+
+.photo {
+  height: 6rem;
+  width: 6rem;
+  border: 0.01px solid rgba(186, 186, 186, 0.336);
+  border-radius: 1.5rem;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.344); /* Adjust the color and opacity of the tint */
+  pointer-events: none; /* Allow interactions with the image */
+}
+
+.name {
+  color: rgb(107, 107, 107);
+  margin: 0;
+}
+
+.title {
+  color: white;
+}
+
+.u-display-flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-section {
+  text-align: right;
+}
+
+.bio__title {
+  color: white;
+  margin-top: 1.8rem;
+  font-size: 1.6rem;
+}
+
+button {
+  float: right;
+  position: relative;
+  right: 2.9rem;
+  bottom: 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.9rem;
+  background-color: transparent;
+  color: white;
+  box-shadow: 0.8px 0.1px 0.1rem rgba(179, 47, 47, 0.8);
+}
+
+.skills-title {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.skill-logo {
+  width: 2rem;
+  display: inline-block;
+}
+
+ul {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.grid-for-two-columns {
+  display: flex;
+}
+
+@media (min-width: 900px) {
+  body {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
