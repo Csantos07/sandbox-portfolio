@@ -24,6 +24,8 @@ body {
   width: 20rem;
   border-radius: 3rem;
   padding: 1.5rem;
+  position: relative;
+  background: linear-gradient(black,black);
 }
 
 .card__container--long {
@@ -150,6 +152,38 @@ ul {
 
 .remove-padding-start ul {
   padding-inline-start: 0;
+}
+
+.glow::before, .glow::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #f1e100, #fffc5e, #ffffff, #ffd6d6, 
+    #ff0000, #f61414,#ff0000,#ff9696, #ffffff, #fffc5e, #f1e100);
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+   border-radius: 3rem;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+  
+}
+
+.glow::after {
+  filter: blur(4px);
 }
 
 
