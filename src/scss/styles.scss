@@ -41,7 +41,7 @@ body {
 
 /* this  version is meant to be on a black background */
 .card__container--light-box-shadow {
-  box-shadow: .8px .1px .1rem rgba(179, 47, 47, 0.8); 
+  box-shadow: .8px .1px .3rem rgba(179, 47, 47, 0.8); 
 }
 
 .photo {
@@ -135,6 +135,21 @@ ul {
 
 .grid-for-two-columns {
   display: flex;
+  justify-content: space-between;
+}
+
+.move-up-relatively {
+  position: relative;
+  top: -1.7rem;
+}
+
+.move-down-relatively {
+  position: relative;
+  top: 1rem;
+}
+
+.remove-padding-start ul {
+  padding-inline-start: 0;
 }
 
 
