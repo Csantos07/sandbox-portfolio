@@ -31,6 +31,8 @@ body.dark-version {
   width: 20rem;
   border-radius: 3rem;
   padding: 1.5rem;
+  position: relative;
+  background: linear-gradient(black, black);
 }
 
 /* this current version is meant to be on a white background */
