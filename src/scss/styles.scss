@@ -159,25 +159,39 @@ ul {
   position: absolute;
   left: -2px;
   top: -2px;
-  background: linear-gradient(45deg, #f1e100, #fffc5e, #ffffff, #ffd6d6, 
-    #ff0000, #f61414,#ff0000,#ff9696, #ffffff, #fffc5e, #f1e100);
+  background: linear-gradient(45deg, #f10000, #ff2b2b, #ffffff, #ffd6d6, 
+    #ff0000, #f61414,#ff0000);
   background-size: 400%;
   width: calc(100% + 5px);
   height: calc(100% + 5px);
   z-index: -1;
-  animation: animate 20s linear infinite;
-   border-radius: 3rem;
+  animation: animate 15s ease-in-out;
+  animation-fill-mode: forwards;
+  border-radius: 3rem;
 }
 
 @keyframes animate {
   0% {
     background-position: 0 0;
+    background-color: red;
+    opacity: 0;
+  }
+  1% {
+  
+    opacity: .1;
+  }
+  29% {
+    
+    opacity: .4;
   }
   50% {
-    background-position: 400% 0;
+    background-position: 200% 0;
+    opacity: 1;
   }
   100%{
     background-position: 0 0;
+    background-color: red;
+    opacity: 0;
   }
   
 }
