@@ -24,8 +24,8 @@ body.dark-version {
 }
 
 .card__container--long {
-  margin: 1rem 1rem;
-  height: 30rem;
+  margin: 0rem 1rem 1rem 1rem;
+  height: auto;
   width: 20rem;
   border-radius: 3rem;
   padding: 1.5rem;
@@ -110,6 +110,7 @@ button {
 .skills-title {
   font-size: 3rem;
   letter-spacing: 1rem;
+  margin: 0;
 }
 
 ul li {
