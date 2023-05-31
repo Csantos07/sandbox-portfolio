@@ -156,19 +156,20 @@ ul {
   position: absolute;
   left: -2px;
   top: -2px;
-  background: conic-gradient(from 45deg, rgb(176, 28, 28), rgb(135, 1, 1), rgb(255, 0, 0), rgb(255, 255, 255));
+  background: conic-gradient(from 45deg, rgb(240, 240, 240), rgb(135, 1, 1), rgb(131, 1, 1), rgb(113, 38, 38));
   background-size: 400%;
   width: calc(100% + 5px);
   height: calc(100% + 5px);
   z-index: -1;
-  animation: animate 4s ease-in-out;
+  animation: animate 5s ease-in;
   animation-fill-mode: forwards;
   border-radius: 3rem;
 }
 
 @keyframes animate {
   0% {
-    opacity: 1;
+    background-position: 0 0;
+    opacity: 0.11;
   }
   50% {
     background-position: 100% 0;
