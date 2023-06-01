@@ -174,30 +174,18 @@ ul {
 @keyframes animate {
   0% {
     background-position: 0 0;
-    // transform: rotate(0 deg);
     opacity: .11;
   }
 
-  // 45%{
-  //   opacity: .5;
-  // }
- 
   50%{
     background-position: 100% 0;
-    // transform: rotate(360deg);
     opacity: .8;
   }
 
-  // 55%{
-  //   opacity: 1;
-  // }
-
   100%{
     background-position: 0 0;
-    // transform: rotate(360deg);
     opacity: 0;
   }
-  
 }
 
 .glow::after {
@@ -208,8 +196,8 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  height: 150%;
-  width: 150%;
+  height: 100%;
+  width: 100%;
   opacity: .5;
   overflow: hidden;
 }
