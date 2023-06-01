@@ -188,7 +188,15 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
   opacity: 0.5;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 900px) {
