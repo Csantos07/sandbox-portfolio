@@ -188,8 +188,8 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
   opacity: 0.5;
   overflow: hidden;
 }
