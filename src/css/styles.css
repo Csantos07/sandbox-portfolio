@@ -184,6 +184,13 @@ ul {
   filter: blur(4px);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
 @media (min-width: 900px) {
   body {
     flex-direction: row;
